@@ -15,12 +15,14 @@
     </div>
     <script>
         function clicar() {
-            var txtc = document.getElementById('txtc').value;
+            var txtc = document.getElementById('txtc').value
             var res = document.querySelector('div#res')
             res.innerHTML = `<p>You are from <strong>${txtc}</strong>`
             if (txtc == 'Canada') {
                 res.innerHTML += '<p>You are <strong>Canadian</strong>!</p>'
-            } 
+            } else {
+                res.innerHTML += '<p>You are a <strong>foreigner</strong>!</p>'
+            }
         }
         </script>
 </body>
