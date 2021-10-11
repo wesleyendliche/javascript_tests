@@ -8,23 +8,20 @@
 </head>
 <body>
     <h1>Country Check</h1>
-    Where are you from?<input type="text" name="txtc" id="txtc">
+    Where are you from? <input type="text" name="txtc" id="txtc">
     <input type="button" value="Check" onclick="clicar()">
     <div id="res">
 
     </div>
     <script>
         function clicar() {
-            var txtc = document.querySelector('input#txtc').value.toLowerCase();
+            var txtc = document.getElementById('txtc').value;
             var res = document.querySelector('div#res')
-            var country = String(txtc.value)
             res.innerHTML = `<p>You are from <strong>${txtc}</strong>`
-                if (country += 'Canada') {
-                    res.innerHTML += '<p>You are <strong>Canadian</strong>!</p>'
-                } else {
-                    res.innerHTML += '<p>You are a <strong>foreigner</strong></p>'
-                }
-            }
-    </script>
+            if (txtc == 'Canada') {
+                res.innerHTML += '<p>You are <strong>Canadian</strong>!</p>'
+            } 
+        }
+        </script>
 </body>
 </html>
