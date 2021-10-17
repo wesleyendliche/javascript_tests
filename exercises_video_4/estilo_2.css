@@ -1,5 +1,5 @@
 body {
-    background: rgb(122, 233, 224);
+    background: rgb(41, 10, 2);
     font: normal 15pt Arial;
 }
 
@@ -26,9 +26,4 @@ footer {
 div {
     text-align: left;
     padding: 8px
-}
-#image {
-    width: 250px;  
-    height: 250px;
-    border-radius: 50%;
 }
