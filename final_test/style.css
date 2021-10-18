@@ -1,0 +1,40 @@
+body {
+    background: rgb(90, 138, 13);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+    }
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div {
+    text-align: center;
+    padding: 8px
+}
+#image {
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+}
+
+.numlist {
+    box-sizing: content-box;
+    height: 5px;
+    width:20px;
+}
