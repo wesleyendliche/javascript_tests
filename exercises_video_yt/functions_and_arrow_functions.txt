@@ -1,0 +1,29 @@
+function addNums(num1 = 1, num2 = 1) { //default values
+    console.log(num1 + num2);
+}
+
+addNums(5, 5); //change default values
+
+function addNums(num1 = 1, num2 = 1) { //default values
+    return num1 + num2;
+}
+
+console.log(addNums(3, 3)); //change default values
+
+const addNums = (num1 = 1, num2 = 1) => { //=> arrow function symbol
+    return num1 + num2;
+}
+
+console.log(addNums(4, 3)); 
+
+const addNums = (num1 = 1, num2 = 1) => console.log(num1 + num2); // all in one line
+
+addNums(7, 10); 
+
+const addNums = (num1 = 1, num2 = 1) => num1 + num2; //even simpler
+
+console.log(addNums(4, 10)); 
+
+const addNums = num1 => num1 + 8; // another way
+
+console.log(addNums(10)); 

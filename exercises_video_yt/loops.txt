@@ -1,0 +1,34 @@
+//For (Loops)
+for(let i = 0; i <= 10; i++) {
+    console.log(`For Loop Number: ${i}`);
+}
+
+//While
+let i = 0; //set variable outside
+while(i < 10) {
+    console.log(`While Loop Number: ${i}`);
+    i++;
+}
+
+--------------------------------------------
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Dentist appointment',
+        isCompleted: false
+    }
+];
+
+for(let todo of todos) {
+    console.log(todo.text);
+}

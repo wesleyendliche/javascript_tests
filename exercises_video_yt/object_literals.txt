@@ -1,0 +1,24 @@
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+        street: '50 main st',
+        city: 'Boston',
+        state: 'MA'
+    }
+}
+
+console.log(person.firstName, person.lastName);
+console.log(person.hobbies[1]);
+console.log(person.address.city);
+
+const { firstName, lastName, address: { city }} = person; //taking things out of person const
+
+console.log(lastName);
+console.log(city);
+
+person.email = 'john@gmail.com'; //adding stuff
+
+console.log(person);
