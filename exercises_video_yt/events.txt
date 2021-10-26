@@ -1,0 +1,9 @@
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', (e) => { //(event we want, function we want to run)
+    e.preventDefault(); //it doesn't flash and go away in the console
+    document.querySelector('#my-form').style.background = '#ccc' // change the color of the background when we click
+    document.querySelector('body').classList.add('bg-dark'); // change the color of the background when we click
+    document.querySelector('.items').lastElementChild.innerHTML = '<h1>Hello</h1>' //change the last item when clicked
+});
+
