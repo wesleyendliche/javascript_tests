@@ -1,0 +1,8 @@
+//Single element selectors
+console.log(document.getElementById('my-form')); //only by ID
+console.log(document.querySelector('h1')); //select by any type: ID, class...
+
+//Multiple element selectors
+console.log(document.querySelectorAll('.item')); //select more than one element
+//console.log(document.getElementsByClassName('item')); //select more elements, but only from the same class
+//console.log(document.getElementsByTagName('li')); //select more elements, but only from the same tag

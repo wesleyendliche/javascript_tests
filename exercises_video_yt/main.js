@@ -1,3 +1,3 @@
-const addNums = num1 => num1 + 8;
+const items = document.querySelectorAll('.item');
 
-console.log(addNums(10)); 
+items.forEach((item) => console.log(item));
