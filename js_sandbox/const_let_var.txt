@@ -1,0 +1,28 @@
+// var, let, const
+
+/*var name = 'John Doe';
+console.log(name);
+name = 'Wesley Endliche'
+console.log(name);*/
+
+/*let name;
+name = 'John Doe';
+console.log(name);
+name = 'Wesley Endliche';
+console.log(name);*/
+
+//const name = 'John';
+//console.log(name);
+// can not reassign
+//name = 'Sara';
+//const greeting;
+
+const person = {
+    name: 'Wes',
+    age: 29
+}
+
+person.name = 'Wesley'; //mutating the const
+person.age = 29.5;
+
+console.log(person);
