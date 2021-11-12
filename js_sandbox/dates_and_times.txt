@@ -15,6 +15,8 @@ val = today.getSeconds();
 val = today.getMilliseconds();
 val = today.getTime();
 
+console.log(today);
+
 birthday.setMonth(2); //changes month
 birthday.setDate(1);
 birthday.setFullYear(1992);
