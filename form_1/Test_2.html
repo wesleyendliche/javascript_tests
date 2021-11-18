@@ -1,0 +1,60 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilo_2.css" />
+</head>
+<body>
+    <form method="POST" action="random.php" enctype="multipart/form-data"> <!--é necessário para enviar arquivos por formulários-->
+        <input type="hidden" name="country" value="BR" />
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label><br/>
+                Primeiro nome:<br/>
+                <input type="text" name="name" required  minlength="3" maxlength="35"/>
+            </label>
+            <label><br/>
+                Sobrenome:<br/>
+                <input type="text" name="lastname" />
+            </label>
+            <label><br/>
+                Foto:<br/>
+                <input type="file" name="photo" accept="image/*"/>
+            </label>
+            <label><br/>
+                E-mail:<br/>
+                <input type="email" name="email"/>
+            </label>
+            <label><br/>
+                Arquivos:<br/>
+                <input type="file" name="pdf" accept="application/*"/>
+            </label>
+            <label><br/>
+                Idade:<br/>
+                <input type="number" name="age" min="18" max="120"/>
+            </label>
+            <label><br/>
+                Data de inscrição:<br/>
+                <input type="date" name="registerdate" min="2021-09-12"/>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label><br/>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname" />
+            </label>
+            <label><br/>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle" />
+            </label><br/>
+        </fieldset>
+        <button>Cadastrar</button>
+    </form>
+    
+    
+</body>
+</html>
