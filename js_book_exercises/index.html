@@ -24,12 +24,10 @@
 
     <script>
         function check(){
-            var num = document.getElementById('num1');
-            var pre = num - 1;
-            var pos = num + 1;
-            var res = document.getElementById('result');
+            let num1 = Number(document.querySelector('num1'));
+            let res = document.getElementById('result');
 
-            res.innerHTML = `O número digitado foi ${num}. O que vem antes é ${pre} e o que vem depois é ${pos}`
+            res.innerHTML = `O número digitado foi ${num1}. O que vem antes é ${num1 - 1} e o que vem depois é ${num1 + 1}`;
         }
     </script>
 </body>
