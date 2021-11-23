@@ -17,18 +17,18 @@
             <input type="number" aria-describedby="num1" id="num1">
             </label>
             <button value="Check" onclick="check()">Checar</button>
-            <p>Analisando...</p>
-            <div id="result"></div>
+            <div id="result"><p>Analisando...</p></div>
         </div>
     </div>
 
     <script>
         function check(){
-            let num1 = Number(document.querySelector('num1'));
-            let res = document.getElementById('result');
-
+            var num1 = Number(document.getElementById('num1').value);
+            var res = document.getElementById('result');
+        
             res.innerHTML = `O número digitado foi ${num1}. O que vem antes é ${num1 - 1} e o que vem depois é ${num1 + 1}`;
         }
+        
     </script>
 </body>
 </html>

@@ -14,7 +14,7 @@ h1 {
     background-color: #fff;
     box-shadow: 5px 3px 5px 3px #000;
     width: 400px;
-    height: 100px;
+    height: 250px;
     padding: 20px;
     margin: auto;
     border-radius: 20px;
@@ -29,4 +29,18 @@ button {
     background-color: #406010;
     color: #fff;
     border-radius: 20px;
+}
+
+button:hover {
+    background-color: #2e4905; 
+}
+
+p {
+    text-align: center;
+    margin-top: 70px;
+}
+
+input {
+    height: 20px;
+    width: 200px;
 }
