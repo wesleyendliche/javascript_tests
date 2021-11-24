@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria Checkout</title>
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Contas</h1>
+    </header>
+    <div class=box>
+        <label for="totclientes">Total de pessoas à mesa:
+            <input type="number" name="totclientes" id="totclientes">
+        </label><br>
+        <label for="valor">Valor a pagar (R$): 
+            <input type="number" name="valor" id="valor">
+        </label>
+        <button value="Check" onclick="calc()">Calcular</button><br><br>
+        <div id="result">Aguardando dados...</div>
+    </div>
+
+    <script>
+        function calc(){
+            var pessoas = Number(document.getElementById('totclientes').value);
+            var valor = Number(document.getElementById('valor').value);
+            var divisao = valor / pessoas;
+            var res = document.getElementById('result');
+        
+            res.innerHTML = `A conta de R$${valor.toFixed(2)} dividida por ${pessoas} pessoas dará uma divisão de R$${divisao.toFixed(2)} para cada um.`;
+        }
+    </script>
+</body>
+</html>
